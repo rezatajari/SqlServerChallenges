@@ -1,48 +1,41 @@
-# SQL Server Challenges
+# SQLChallenges
 
-This repository is my personal space to **learn Microsoft SQL Server** by writing queries, experimenting with concepts, and solving practice challenges.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-I’m using this repo to track my progress as I go through tutorials, online courses, and self-made exercises — focusing on understanding **how SQL Server works** in real-world scenarios.
+## Overview
 
----
+**SQLChallenges** is a personal repository for practicing and documenting SQL Server exercises. The purpose is to reinforce learning through **hands-on exercises**, ensuring that theoretical concepts are applied in practice.
 
-## Purpose
+The repo contains exercises covering **table management, data manipulation, constraints, views, and joins**. Each folder is self-contained and includes SQL scripts that can be run directly in SQL Server Management Studio (SSMS) or any compatible SQL client.
 
-- Practice SQL Server syntax and database concepts step by step  
-- Write and improve queries through hands-on examples  
-- Work on small SQL challenges and case studies  
-- Record what I learn in a structured and consistent way  
-- Build confidence with data manipulation, joins, and optimization  
+The philosophy behind this repository is **learning by doing**: read the instructions in each folder’s README, attempt the exercises yourself, and then review the scripts to compare approaches and understand best practices.
 
 ---
 
-## Learning Focus
+## Folder Structure
 
-- Creating and managing databases, tables, and relationships  
-- Understanding data types, keys, and constraints  
-- Querying data using `SELECT`, `WHERE`, `GROUP BY`, and aggregates  
-- Joining multiple tables and using subqueries  
-- Writing stored procedures, views, and triggers  
-- Practicing performance tuning and indexing  
-- Applying SQL to solve real-world problems  
+- **Tables/** – Exercises for creating, modifying, deleting, and updating tables.  
+  Includes: `01_table`, `02_insert`, `03_delete`, `04_drop`, `06_update`.  
 
----
+- **Queries/** – Exercises for retrieving and manipulating data.  
+  Includes: `05_select`, `14_orderby-asc-desc`, `16_concat`.  
 
-## My Approach
+- **Constraints/** – Exercises for primary keys, foreign keys, check constraints, and modifying constraints.  
+  Includes: `07_constraint`, `12_check-option`, `15_constraint-add-drop`.  
 
-I’ll continuously:
-1. Watch tutorials or read docs  
-2. Try the concept myself in SQL Server  
-3. Document what worked and what didn’t  
-4. Create mini challenges or real examples to reinforce learning  
+- **Views/** – Exercises for creating, altering, schema-binding, encrypted, and sparse views.  
+  Includes: `08_sparse`, `09_view`, `10_alter-view`, `11_schemabinding`, `13_encryption-view`.  
 
----
+- **Joins/** – Exercises for inner, left, right, and full joins.  
+  Includes: `17_inner-join`, `18_left-right-full-join`.  
 
-## About This Repo
-
-This isn’t just for finished solutions — it’s my **learning journal** in SQL Server.  
-Every script, challenge, and note reflects what I’ve practiced and learned.  
-
-> “Learning SQL is not about memorizing commands — it’s about understanding data.”
+> **Note:** As you progress, new folders can be added for advanced topics such as **Stored Procedures**, **Transactions**, **Indexes**, or **Security**.
 
 ---
+
+## How to Use
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/rezatajari/SQLChallenges.git

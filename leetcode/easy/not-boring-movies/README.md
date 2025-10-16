@@ -1,4 +1,3 @@
-```markdown
 # Not Boring Movies
 
 **Difficulty:** Easy  

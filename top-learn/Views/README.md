@@ -34,13 +34,6 @@ The purpose of these exercises is to **practice advanced table abstraction techn
 
 ---
 
-### check-option.sql
-- **Goal:** Learn how `WITH CHECK OPTION` enforces data integrity in views.  
-- **Topics covered:** 
-  - Restricting inserted or updated data to comply with the view’s conditions.
-
----
-
 ### encryption-view.sql
 - **Goal:** Create encrypted views so that the definition is hidden from users.  
 - **Topics covered:** 

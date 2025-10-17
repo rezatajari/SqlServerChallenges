@@ -56,6 +56,41 @@ The purpose of these exercises is to **reinforce SQL fundamentals by hands-on pr
 
 ---
 
+### computed-column.sql
+
+* **Goal:** Learn how to create columns that automatically calculate their values based on other columns.
+* **Topics covered:** Computed columns, automatic calculations without storing extra data.
+
+---
+
+### declare-variable-as-table.sql
+
+* **Goal:** Use table variables to store temporary data within a session.
+* **Topics covered:** Declaring table variables, inserting and selecting rows temporarily.
+
+---
+
+### defination-identity.sql
+
+* **Goal:** Define primary key columns with auto-incrementing identity values.
+* **Topics covered:** Identity columns, setting seed and increment, primary key constraints.
+
+---
+
+### identity-insert-manually.sql
+
+* **Goal:** Insert rows manually into an identity column when needed.
+* **Topics covered:** Temporarily overriding identity insertion, switching automatic identity back on.
+
+---
+
+### temp-table-local-global.sql
+
+* **Goal:** Learn the difference between local and global temporary tables.
+* **Topics covered:** Local temp tables for current session, global temp tables accessible across sessions.
+
+---
+
 ## How to Use
 
 1. Open SQL Server Management Studio (SSMS) or another SQL client.  

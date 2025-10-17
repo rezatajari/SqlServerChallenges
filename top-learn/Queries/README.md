@@ -9,9 +9,10 @@ The exercises in this folder help you **build practical querying skills** by wor
 
 ## Included Exercises
 
-- **select.sql** – Different ways to show data from a table, including selecting all columns, specific columns, and limiting results with `TOP`.  
-- **orderby-asc-desc.sql** – Sort query results using `ORDER BY` in ascending (`ASC`) or descending (`DESC`) order.  
-- **concat.sql** – Combine or modify columns to generate new output columns using `CONCAT`.
+* **select.sql** – Different ways to show data from a table, including selecting all columns, specific columns, and limiting results with `TOP`.
+* **orderby-asc-desc.sql** – Sort query results using `ORDER BY` in ascending (`ASC`) or descending (`DESC`) order.
+* **concat.sql** – Combine or modify columns to generate new output columns using `CONCAT`.
+* **insert-by-select.sql** – Demonstrates copying data between tables using `SELECT INTO` and inserting rows into an existing table using `INSERT INTO ... SELECT`.
 
 ---
 

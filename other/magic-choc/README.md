@@ -1,7 +1,3 @@
-Here is the same challenge-style version **without emojis and without the repository structure section**:
-
----
-
 # MagicChoc Database Foundation
 
 Welcome to the MagicChoc Database Foundation Challenge.

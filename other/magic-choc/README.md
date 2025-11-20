@@ -1,48 +1,83 @@
-MagicChoc Database Foundation
-Hands-On Exercise: Building the Foundation
-This repository demonstrates how to design and implement a reliable database foundation for the MagicChoc company. The exercise focuses on creating two related tables — Departments and Employees — while applying best practices in data types, constraint naming, and referential integrity.
+Here is the same challenge-style version **without emojis and without the repository structure section**:
 
-Objectives
-Create a new database and schema for HR data.
-Define tables with optimized data types to save storage and improve performance.
-Apply naming conventions for constraints (PK_, FK_).
-Enforce referential integrity using primary and foreign keys.
+---
 
-Step-by-Step Guide
-Step 1: Create the Database Structure (DDL)
-Define the logical container and set the context.
+# MagicChoc Database Foundation
 
-Step 2: Define Structural Integrity and Naming Standards
-Use meaningful names and enforce uniqueness with primary keys.
+Welcome to the MagicChoc Database Foundation Challenge.
+Your goal is to design and implement a reliable, efficient, and standards-driven database foundation for MagicChoc’s HR data. You will create structured tables, enforce relationships, and apply professional naming and integrity rules using SQL DDL.
 
-Step 3: Implement Data Type Optimization and Keys
-Choose restrictive data types for efficiency:
+This challenge is designed to strengthen your database-engineering discipline through clear, incremental tasks.
 
-SMALLINT for IDs (< 32,767).
-BIT for flags (contractor vs. staff).
+---
 
-Step 4: Enforce Referential Integrity (FOREIGN KEY)
-Ensure relationships remain valid across tables.
+## Challenge Objectives
 
--- Employees linked to Departments
+Your mission includes:
 
--- Employees linked to their Manager (self-reference)
+1. Creating a new database and HR schema to store personnel data.
+2. Designing the core `Departments` and `Employees` tables with clear, meaningful structure.
+3. Optimizing data types to minimize storage and maximize performance.
+4. Applying consistent naming conventions for constraints (`PK_`, `FK_`).
+5. Enforcing referential integrity between departments, employees, and managers.
 
-Outcome
-By completing this exercise, you will:
+By completing these objectives, you will produce a clean and trustworthy foundation for HR operations.
 
-Establish a solid database structure using DDL.
-Apply best practices in naming and data type selection.
-Guarantee data integrity with PK and FK constraints.
-Build a foundation that remains consistent regardless of application logic.
+---
 
-Repository Structure
-README.md → Documentation (this file).
-scripts/ → SQL scripts for database creation and constraints.
+## Step-by-Step Challenge Instructions
 
-References
-Microsoft SQL Server Documentation
-Best Practices in Database Design (naming conventions, data type optimization, referential integrity)
+### Step 1 — Create the Database Structure (DDL)
 
+Start by creating the database and schema.
+This establishes the environment in which all HR objects will exist.
 
+---
+
+### Step 2 — Apply Structural Integrity and Naming Standards
+
+Define primary keys with intentional constraint names.
+Ensure every structural element supports clarity and long-term maintainability.
+
+---
+
+### Step 3 — Implement Data Type Optimization and Keys
+
+Use the most efficient data types appropriate for the expected data ranges.
+
+Examples:
+
+* `SMALLINT` for IDs when values stay below 32,767.
+* `BIT` for boolean or flag fields such as contractor status.
+
+Add primary keys using the `PK_` naming convention.
+
+---
+
+### Step 4 — Enforce Referential Integrity (FOREIGN KEY)
+
+Secure the relationships that bind the HR data model:
+
+* Every employee must reference a valid department.
+* Employees may reference another employee as their manager (self-referencing key).
+
+These foreign keys ensure the data remains valid and consistent over time.
+
+---
+
+## Challenge Outcome
+
+When you complete this exercise, you will have:
+
+* Constructed a solid database foundation using disciplined DDL.
+* Applied best practices in naming conventions and data type selection.
+* Enforced primary key and foreign key integrity across all core relationships.
+* Built a structure that maintains correctness regardless of application-level behavior.
+
+---
+
+## References
+
+* Microsoft SQL Server Documentation
+* Database Design Best Practices: Naming Conventions, Data Type Optimization, Referential Integrity
 

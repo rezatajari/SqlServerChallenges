@@ -29,5 +29,3 @@ To ensure high performance, we avoid wrapping the `orderdate` column in function
 ### 3. Language-Neutral Date Literals
 The solution uses the `YYYYMMDD` format. This is the safest format in SQL Server as it is not affected by regional `SET DATEFORMAT` or `SET LANGUAGE` settings, ensuring the backend code is robust across different server environments.
 
-## Solution
-The implementation can be found in the `Exercise1.sql` file in this directory.

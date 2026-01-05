@@ -110,7 +110,7 @@ The result can be returned in any order.
 
 ---
 
-## ترکیب دو جدول (Combine Two Tables)
+## ترکیب دو جدول
 
 🔹 **سطح دشواری:** آسان (Easy)  
 🔹 **موضوعات:** SQL Joins، ترکیب داده‌ها (Data Combination)  

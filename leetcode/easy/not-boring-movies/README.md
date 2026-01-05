@@ -85,7 +85,7 @@ Sort the results by **`rating` in descending order** (highest-rated first).
 
 ---
 
-## هدف مسئله (Challenge Goal)
+## هدف مسئله
 
 هدف شما این است که تمام فیلم‌هایی را پیدا کنید که **هم‌زمان** شرایط زیر را داشته باشند:
 
@@ -108,7 +108,7 @@ Sort the results by **`rating` in descending order** (highest-rated first).
 
 ---
 
-## شرح وظیفه (Task Description)
+## شرح وظیفه
 
 تمام ستون‌ها (**id، movie، description، rating**) را برای فیلم‌هایی بازگردانید که:
 
@@ -143,7 +143,7 @@ Sort the results by **`rating` in descending order** (highest-rated first).
 
 ---
 
-## توضیح (Explanation)
+## توضیح 
 
 - فیلم‌هایی با **id فرد** عبارت‌اند از: 1، 3 و 5  
 - فیلم با id = 3 دارای description برابر با `"boring"` است، بنابراین حذف می‌شود  
@@ -151,7 +151,7 @@ Sort the results by **`rating` in descending order** (highest-rated first).
 
 ---
 
-## نکات (Notes)
+## نکات
 
 - برای تشخیص فرد بودن شناسه، از عملگر **باقی‌مانده (%)** استفاده کنید:
   

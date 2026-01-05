@@ -77,7 +77,7 @@ Sort the results by **`rating` in descending order** (highest-rated first).
 - Case sensitivity may depend on your SQL collation settings — ensure `"boring"` matches exactly.
 ```
 ```
-## فیلم‌های غیرکسل‌کننده (Not Boring Movies)
+## فیلم‌های غیرکسل‌کننده
 
 🔹 **سطح دشواری:** آسان (Easy)  
 🔹 **موضوعات:** فیلتر کردن در SQL، مرتب‌سازی، WHERE Clause  

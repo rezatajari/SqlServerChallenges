@@ -127,7 +127,7 @@ The result should include **all students and all subjects**, even if a student n
 * The result includes **all possible student × subject pairs**.
 
 ---
-## دانش‌آموزان و امتحانات (Students and Examinations)
+## دانش‌آموزان و امتحانات 
 
 🔹 **سطح دشواری:** متوسط (Medium)  
 🔹 **موضوعات:** SQL، JOINها، Aggregation، شمارش  

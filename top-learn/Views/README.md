@@ -68,3 +68,63 @@ The purpose of these exercises is to **practice advanced table abstraction techn
 - Use `CREATE OR ALTER VIEW` to avoid errors if the view already exists.  
 - Practice binding views with `SCHEMABINDING` to understand dependency constraints.  
 - Explore sparse columns to see performance benefits with null-heavy tables.
+
+---
+
+## Views
+
+این پوشه شامل تمرین‌های SQL Server مرتبط با **Views** است — جدول‌های مجازی که اجازه می‌دهند داده‌ها را به شکل سفارشی نمایش و مدیریت کنید.  
+شما یاد خواهید گرفت که چگونه ویو ایجاد، تغییر، رمزگذاری و به ساختار جدول متصل کنید، و همچنین با ستون‌های sparse در جداول آزمایش کنید.
+
+هدف تمرین‌ها: تمرین تکنیک‌های پیشرفته انتزاع جدول و درک تعامل ویوها با ساختار جداول در SQL Server.
+
+---
+
+### تمرین‌های موجود
+
+- `view.sql`  
+  هدف: ایجاد یک ویو ساده برای نمایش ستون‌های انتخاب شده از جدول  
+  مفاهیم: `CREATE VIEW`  
+  مثال: ایجاد `Vw_Personal_query` برای نمایش `lastname` و `mobile` از جدول `Personal`
+
+- `alter-view.sql`  
+  هدف: تغییر یک ویو موجود یا ایجاد آن در صورت عدم وجود  
+  مفاهیم: `CREATE OR ALTER VIEW`  
+  مثال: `Vw_Personal_query` برای نمایش `firstName`, `country` و `mobile`
+
+- `schemabinding.sql`  
+  هدف: اتصال ویو به ساختار جدول زیرین برای جلوگیری از تغییراتی که ویو را خراب می‌کند  
+  مفاهیم: `WITH SCHEMABINDING`  
+  مثال: ویو `Vw_Employees` نمی‌تواند خراب شود اگر ستونی که به آن وابسته است حذف شود
+
+- `encryption-view.sql`  
+  هدف: ایجاد ویوهای رمزگذاری شده تا تعریف آن‌ها از کاربران مخفی بماند  
+  مفاهیم: `WITH ENCRYPTION`, `WITH CHECK OPTION`  
+  مثال: `Vw_Employee_With_Option` تضمین می‌کند کاربران نمی‌توانند تعریف کوئری اصلی را ببینند
+
+- `sparse.sql`  
+  هدف: استفاده از ستون‌های sparse برای بهینه‌سازی ذخیره‌سازی مقادیر NULL  
+  مفاهیم: `ALTER TABLE … ALTER COLUMN … SPARSE`, بررسی خصوصیات ستون‌ها با `sys.all_columns`  
+  مثال: ستون `Country` در جدول `Personal` به صورت sparse برای بهبود عملکرد مقادیر NULL
+
+---
+
+### نحوه استفاده
+
+1. SQL Server Management Studio (SSMS) یا کلاینت SQL دیگر را باز کنید  
+2. به این پوشه بروید  
+3. یک فایل `.sql` را باز کرده و دستورات را اجرا کنید  
+4. بعد از ایجاد ویو از `SELECT * FROM view_name` برای بررسی نتایج استفاده کنید  
+5. تغییرات زیر را امتحان کنید:  
+   - تغییر ستون‌ها  
+   - اضافه کردن رمزگذاری  
+   - آزمایش قوانین `WITH CHECK OPTION`  
+
+---
+
+### نکات یادگیری
+
+- همیشه نتایج ویو را با `SELECT * FROM view_name` بررسی کنید  
+- از `CREATE OR ALTER VIEW` استفاده کنید تا خطا در صورت وجود ویو قبلی پیش نیاید  
+- تمرین کنید که ویوها را با `SCHEMABINDING` متصل کنید تا وابستگی‌ها را درک کنید  
+- ستون‌های sparse را بررسی کنید تا مزایای عملکردی جداول با مقادیر NULL زیاد را ببینید

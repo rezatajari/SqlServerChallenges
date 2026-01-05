@@ -110,3 +110,77 @@ The purpose of these exercises is to **reinforce SQL fundamentals by hands-on pr
 - Use `SELECT * FROM table_name` after `INSERT`, `UPDATE`, or `DELETE` to verify results.  
 - Experiment by adding new columns, changing data types, or updating multiple rows at once.  
 - Practice **batch execution** using `GO` to understand how SQL Server processes batches.  
+
+---
+
+## Tables
+
+این پوشه شامل تمرین‌های SQL Server است که روی **مدیریت جداول و دستکاری داده‌ها** تمرکز دارند.  
+شما تمرین خواهید کرد روی ایجاد جدول، تغییر آن، درج داده، به‌روزرسانی ردیف‌ها، حذف داده و حذف جدول.
+
+هدف این تمرین‌ها تقویت مفاهیم پایه SQL از طریق **تمرین عملی** است.
+
+---
+
+### تمرین‌های موجود
+
+- `table.sql`  
+  هدف: ایجاد جدول، تغییر ستون‌ها و به‌روزرسانی تعاریف ستون  
+  مفاهیم: `CREATE TABLE`، `ALTER TABLE ADD/DROP/ALTER COLUMN`  
+  نکته: به دستورات `GO` دقت کنید که پایان یک دسته (batch) را مشخص می‌کند
+
+- `insert.sql`  
+  هدف: اضافه کردن داده به جدول موجود  
+  مفاهیم: `INSERT INTO`، درج چند ردیف در یک دستور  
+
+- `delete.sql`  
+  هدف: حذف ردیف‌ها با شرایط خاص  
+  مفاهیم: `DELETE FROM ... WHERE ...`  
+
+- `drop.sql`  
+  هدف: حذف کامل جدول یا پاک کردن همه داده‌ها  
+  مفاهیم:  
+  - `DROP TABLE` → حذف کامل جدول  
+  - `DELETE FROM` → پاک کردن همه داده‌ها اما حفظ ساختار جدول  
+
+- `update.sql`  
+  هدف: به‌روزرسانی ردیف‌های موجود  
+  مفاهیم: `UPDATE ... SET ... WHERE ...`  
+  مثال: به‌روزرسانی یک یا چند ستون برای یک ردیف  
+
+- `computed-column.sql`  
+  هدف: ایجاد ستون‌های محاسبه شده که خودکار مقادیرشان را بر اساس ستون‌های دیگر حساب می‌کنند  
+
+- `declare-variable-as-table.sql`  
+  هدف: استفاده از متغیر جدول برای ذخیره داده موقت در طول جلسه  
+
+- `defination-identity.sql`  
+  هدف: تعریف ستون کلید اصلی با مقادیر اتوماتیک افزایش‌یابنده (IDENTITY)  
+
+- `identity-insert-manually.sql`  
+  هدف: درج دستی در ستون IDENTITY در صورت نیاز  
+
+- `temp-table-local-global.sql`  
+  هدف: یادگیری تفاوت بین جدول موقت محلی و سراسری  
+
+---
+
+### نحوه استفاده
+
+1. SQL Server Management Studio (SSMS) یا هر کلاینت SQL دیگر را باز کنید  
+2. به این پوشه بروید  
+3. یک فایل `.sql` را باز کرده و دستورات را اجرا کنید  
+4. توضیحات داخل فایل را بخوانید تا هر مرحله را بفهمید  
+5. تغییرات زیر را امتحان کنید:  
+   - اضافه کردن ردیف‌های اضافی  
+   - به‌روزرسانی چند ردیف  
+   - آزمایش شرط‌های مختلف در `DELETE` و `UPDATE`  
+
+---
+
+### نکات یادگیری
+
+- قبل از اجرای `DROP TABLE` همیشه از جداول آزمایشی نسخه پشتیبان بگیرید  
+- بعد از `INSERT`، `UPDATE` یا `DELETE` از `SELECT * FROM table_name` برای بررسی نتایج استفاده کنید  
+- با اضافه کردن ستون‌های جدید، تغییر نوع داده‌ها یا به‌روزرسانی چند ردیف آزمایش کنید  
+- اجرای دسته‌ای با `GO` را تمرین کنید تا بفهمید SQL Server چگونه دسته‌ها را پردازش می‌کند

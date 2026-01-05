@@ -44,7 +44,7 @@ The goal is to **understand how to enforce business rules in the database** and 
 - Practice adding, modifying, and dropping constraints to understand how rules evolve in real databases.
 ---
 
-## قوانین و شرایط
+## Constraints
 
 این پوشه شامل تمرین‌های SQL Server است که روی **قیود و قوانین** تمرکز دارند تا صحت داده‌ها در جدول‌ها و VIEWها تضمین شود.  
 شما تمرین می‌کنید که چگونه مقادیر پیش‌فرض، **CHECK constraints** و گزینه‌های بررسی VIEWها را ایجاد و تغییر دهید، و همچنین قیود را در صورت نیاز حذف کنید.
